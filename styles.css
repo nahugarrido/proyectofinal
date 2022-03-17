@@ -10,8 +10,12 @@ header svg:hover {
 header a {
   text-decoration: none;
   color: #212529;
+  cursor: default;
 }
 
+header a:hover {
+  color: #212529;
+}
 header {
   align-items: center;
   /* Si queremos eliminar la linea blanca de la navbar borrar margin-bottom */
@@ -41,10 +45,6 @@ rect {
   opacity: 0;
 }
 
-.logo_argprograma:hover {
-  background-color: #0d6efd;
-}
-
 .banner-container {
   background-color: rgba(215, 215, 221, 0.13);
   display: flex;
@@ -67,13 +67,64 @@ rect {
   height: 45%;
 }
 
+.profile-container {
+  display: flex;
+  align-items: center;
+}
+
+.profile-img {
+  width: 50%;
+  height: 50%;
+}
+
+.profile-text {
+  padding-top: 10px;
+  text-align: center;
+}
+.bold {
+  font-weight: 600;
+}
+
+.acerca-text {
+  padding-top: 20px;
+}
+
 #test {
   background-color: #212529;
   align-items: center;
+}
+
+.tools-edit svg:hover {
+  cursor: pointer;
+  fill: #0d6efd;
+}
+.tools-edit svg {
+  margin: 0px 6px 0px;
+}
+
+.grey-container {
+  background-color: rgba(215, 215, 221, 0.13);
+}
+
+.title-row {
+  padding-left: 6%;
+}
+
+.img-container {
+  display: flex;
+  align-items: center;
+}
+
+.img-inside-container {
+  width: 40%;
+  height: 22.5%;
+  vertical-align: middle;
 }
 
 /* TODO list */
 /* 
 -Crear dividor asi remplazamos el mb del header y asi podemos poner la navbar fija.
 -Hacer transicion de svg (linkedin, github) también de logo_argprograma mas suave.
+-getwaves.io footer de olas
+-https://app.haikei.app/
 */
